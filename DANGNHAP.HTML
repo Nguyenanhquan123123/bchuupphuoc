@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PH FRUIT</title>
+<style type="text/css">
+.hide{display:none}
+.error{color:red}
+</style>
+<script language="javascript">
+   var txtHoten, Ngay, Thang, txtNam,radGioitinh,Diachi, txtSodienthoai,txtEmail,txtTendangnhap,txtMatkhau,txtNhaplaimatkhau ;
+   
+   function sigin()
+   {
+	   if(Dangky.txtHoten.value == "")
+	   {
+		   alert("Bạn chưa nhập họ tên :");return;
+	   }
+	   else if(Dangky.Ngay.value == "")
+	   {
+		   alert("Bạn chưa chọn ngày :");return;
+	   }
+	   else if(Dangky.Thang.value == "")
+	   {
+		   alert("Bạn chưa chọn tháng :");return;
+	   }
+	   else if(Dangky.txtNam.value == "")
+	   {
+		   alert("Bạn chưa chọn năm :");return;
+	   }
+	   else if(Dangky.radGioitinh.value == "")
+	   {
+		   alert("Bạn chưa nhập giới tính :");return;
+	   }
+	    else if(Dangky.Diachi.value == "")
+	   {
+		   alert("Bạn chưa nhập địa chỉ :");return;
+	   }
+	   else if(Dangky.txtSodienthoai.value == "")
+	   {
+		   alert("Bạn chưa nhập số điện thoại :");return;
+	   }
+	   else if(Dangky.txtEmail.value == "")
+	   {
+		   alert("Bạn chưa nhập email :");return;
+	   }
+	   else if(Dangky.txtTendangnhap.value == "")
+	   {
+		   alert("Bạn chưa nhập tên đăng nhập :");return;
+	   }
+	   else if(Dangky.txtMatkhau.value == "")
+	   {
+		   alert("Bạn chưa nhập mật khẩu :");return;
+	   }
+	   else if(Dangky.txtNhaplaimatkhau.value == "")
+	   {
+		   alert("Bạn chưa nhập lại mật khẩu :");return;
+	   }
+	  
+	   alert("Đăng ký thành công!");return;
+	
+   }
+</script>
+</script>
+<link rel="stylesheet" type="text/css" href="CSS/CSS1.CSS"
+</head>
+
+<body>
+<div id="container">
+    <div id="hed">
+       <div id="logo">
+       <ul id="bieutuong" style="margin-left:159px;padding-left:0px;">
+          <img src="images/1.jpg" width="40px;" height="40px;">
+       </ul>
+          
+         <ul>
+              
+            <li><a href="GIỚITHIEU.HTML">GIỚI THIỆU</a></li>
+             <li><a href="TRAICAYSAYKHO.HTML">TRÁI CÂY SẤY KHÔ</a></li>
+             <li><a href="TRAICAYSAYDEO.HTML">TRÁI CÂY SẤY DẺO  </a></li>
+             <li><a href="TRAICAYSAYLANH.HTML">TRÁI CÂY SẤY LẠNH</a></li>
+             <li style="border-right:none;"><a href="Lienhe.html">LIÊN HỆ</a></li>
+           
+          <div class="box">
+  <div class="container-2">
+      <input type="search" id="search" placeholder="Search..."/>
+       <a href="#"><img src="images/25292104-loupe-sign-black-pictogram-rounded-square-icon-web-internet-butt.jpg " width="40px" height="40px"></a>
+  </div>
+</div>
+        <a href="DANGNHAP.HTML"><img src="images/lock.png" style="margin-right:18px"></a>
+        <a href="GIOHANG.HTML"><img src="images/iconCartPro_.png" width="32px" height="32px" ></a>
+         </ul>
+         
+        
+         </div>
+         
+        
+   </div>
+   
+         </div> 
+       
+<form action="#" name="Dangky" method="post" style="padding-top:78px;">
+  <p><b style="margin-left:545px">ĐĂNG KÝ THÀNH VIÊN</b></p>
+  <fieldset style="width:380px;border:0px;margin-left:466px;">
+  <legend><b>Thông tin cá nhân</b></legend>
+  <table>
+  <tr>
+  <td>Họ và tên: </td>
+  <td>
+     <input id="txtHoten" type="text" name="txtHoten" size="30" placeholder="Nhập vào họ tên">
+     <p class="hide error" id="name-error"></p>
+  </td>
+  </tr>
+  <tr>
+     <td>Ngày sinh:</td>
+     <td>
+        <select id="Ngay" name="Ngay">
+        <option value="01" selected>01</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        </select>
+      
+      
+        <select name="Thang">
+        <option value="01" selected>01</option>
+        <option value="02">02</option>
+         <option value="03">03</option>
+          <option value="04">04</option>
+           <option value="05">05</option>
+            <option value="06">06</option>
+             <option value="07">07</option>
+              <option value="08">08</option>
+               <option value="09">09</option>
+                <option value="10">10</option>
+                 <option value="11">11</option>
+                  <option value="12">12</option>
+                  </select>
+                  
+                  <input type="text" name="txtNam" size="5">
+                  <p class="hide error" id="ngay-error"></p>
+                  </td>
+                  </tr>
+                  <tr>
+                   <td>Giới tính: </td>
+                   <td>
+                      <input id="radGioitinh" type="radio" name="radGioitinh" value="Nam" checked="checked">Nam
+                      <input id="radGioitinh" type="radio" name="radGioitinh" value="Nu">Nu
+                      <p class="hide error" id="gioitinh-error"></p>
+                   </td>
+         
+    
+  </tr>
+    <tr>
+      <td>Địa chỉ: </td>
+      <td>
+         <textarea name="Diachi" rows="5" cols="20" placeholder="Địa chỉ"></textarea>
+          <p class="hide error" id="diachi-error"></p>
+      </td>
+    </tr>
+    
+     <tr>
+      <td>Điện thoại: </td>
+      <td>
+          <input id="txtSodienthoai" type="tel" name="txtSodienthoai" size="30"  placeholder="Nhập vào số điện thoại">
+          <p class="hide error" id="sodienthoai-error"></p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Email: </td>
+      <td>
+          <input id="txtEmail" type="email" name="txtEmail"  size="30"   placeholder="Nhập vào email">
+          <p class="hide error" id="email-error"></p>
+      </td>
+    </tr>
+    
+    <tr> 
+       <td colspan="2"> <hr width="100%"></td>
+      </tr>
+  </table>
+  </fieldset>
+  <fieldset style="width:380px;border:0px;margin-left:466px">
+    <legend><b>Thông tin đăng nhập</b></legend>
+    <table>
+       
+       <tr>
+          <td>Tên đăng nhập: </td>
+          <td>
+             <input id="txtTendangnhap" type="text" name="txtTendangnhap" size="25"  placeholder="Nhập vào tên dn">
+             <p class="hide error" id="tendangnhap-error"></p>
+             </td>
+          </tr>
+           <tr>
+          <td>Mat khau: </td>
+          <td>
+             <input id="txtMatkhau" type="password" name="txtMatkhau" size="25" placeholder=" Nhập vào mật khẩu" >
+             <p class="hide error" id="matkhau-error"></p>
+             </td>
+          </tr>
+          
+           <tr>
+          <td>Nhập lại mật khẩu: </td>
+          <td>
+             <input id="txtNhaplaimatkhau" type="password" name="txtNhaplaimatkhau" size="25" placeholder="Nhập lại mật khẩu" >
+             <p class="hide error" id="nhaplaimatkhau-error"></p>
+             </td>
+          </tr>
+          </table>
+          </fieldset>
+          <table style="width:1300px;padding-bottom:24px;">
+          <tr>
+            <td colspan="2" align="center"> 
+            
+             <input type="submit" class="btsubmit" value="Đăng ký" onClick="sigin()" style="width:60px;height:27px;background-color:#3CF">
+              <input type="reset" value="Hủy" name="btHuy" style="width:60px;height:27px;background-color:#3CF">             
+             
+            </td>
+          </tr>
+          </table>
+          </form>
+          
+          <footer>
+      <div class="left">
+           <h3>Điều hướng</h3>
+           <ul>
+             <li><a href="#">Trang chủ</li></a>
+             <li><a href="#">Về chúng tôi</li></a>
+              <li><a href="#">Sản phẩm</li></a>
+              <li><a href="#">Điểm tin hữu ích</li></a>
+              <li><a href="#">Liên hệ</li></a>
+           </ul>
+      </div>
+       
+       <div class="left">
+           <h3>MONA</h3>
+           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br>sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+            <input type="email" size="30" name="Email" placeholder="Email...">
+       </div>
+       
+        <div class="left">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <p>109 Lê Hồng Phong ,<br> Bình Dương</p>
+        <p>0961110344</p>
+        <p>huynhhuuphuoc2202@gmail.com</p>
+        </div>
+        
+        <div id="last">
+        <p>© All rights reserved.</p>
+     </div>
+     </footer>
+</body>
+</html>
